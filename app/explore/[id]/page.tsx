@@ -63,9 +63,8 @@ export default function ProjectDetailsPage() {
     },
   ]);
 
-  // -------------------------
-  // Handlers
-  // -------------------------
+
+
   const handleJoin = () => setHasJoined(true);
 
   const sendMessage = () => {
@@ -105,7 +104,6 @@ export default function ProjectDetailsPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* HEADER */}
       <header className="border-b bg-card sticky top-0 z-40">
         <div className="mx-auto max-w-4xl px-4 py-6">
           <Link
@@ -123,11 +121,10 @@ export default function ProjectDetailsPage() {
         </div>
       </header>
 
-      {/* MAIN CONTENT */}
+
       <main className="mx-auto max-w-4xl px-4 py-8 grid lg:grid-cols-3 gap-8">
-        {/* LEFT SECTION */}
+
         <div className="lg:col-span-2 space-y-6">
-          {/* Overview */}
           <Card className="p-6">
             <div className="flex items-start justify-between mb-6">
               <div className="flex items-center gap-3 flex-wrap">
@@ -143,7 +140,7 @@ export default function ProjectDetailsPage() {
 
             <p className="text-muted-foreground mb-6">{project.description}</p>
 
-            {/* Stats */}
+
             <div className="grid md:grid-cols-3 gap-4 border-y py-6">
               <StatItem
                 icon={<Users className="w-5 h-5 text-primary" />}
@@ -165,7 +162,7 @@ export default function ProjectDetailsPage() {
             </div>
           </Card>
 
-          {/* Skills */}
+
           <Card className="p-6">
             <h3 className="font-semibold text-lg mb-4">Skills Required</h3>
             <div className="flex flex-wrap gap-2">
@@ -177,7 +174,6 @@ export default function ProjectDetailsPage() {
             </div>
           </Card>
 
-          {/* Roles */}
           <Card className="p-6">
             <h3 className="font-semibold text-lg mb-4">Open Roles</h3>
 
@@ -196,7 +192,7 @@ export default function ProjectDetailsPage() {
             </div>
           </Card>
 
-          {/* Chat */}
+
           {hasJoined && (
             <Card className="p-6">
               <h3 className="font-semibold text-lg mb-4">Team Chat</h3>
@@ -223,7 +219,7 @@ export default function ProjectDetailsPage() {
           )}
         </div>
 
-        {/* RIGHT SECTION */}
+
         <div className="space-y-6">
           {!hasJoined ? (
             <Button size="lg" className="w-full" onClick={handleJoin}>
@@ -235,7 +231,7 @@ export default function ProjectDetailsPage() {
             </Button>
           )}
 
-          {/* Quick Info */}
+
           <Card className="p-6">
             <h3 className="font-semibold mb-4">Quick Info</h3>
 
@@ -255,7 +251,7 @@ export default function ProjectDetailsPage() {
             </div>
           </Card>
 
-          {/* Lead Info */}
+
           <Card className="p-6">
             <h3 className="font-semibold mb-4">Project Lead</h3>
 
@@ -280,9 +276,6 @@ export default function ProjectDetailsPage() {
   );
 }
 
-// -------------------------
-// COMPONENTS
-// -------------------------
 
 function StatItem({
   icon,
