@@ -1,18 +1,18 @@
 export const testimonials = [
   {
-    name: "Pankaj Gupta",
+    name: "Prabuddha Datta",
     role: "Computer Science",
     quote: "Found the perfect team for my capstone project within days!",
     avatar: "👩‍💻",
   },
   {
-    name: "Oishi Dey",
+    name: "Sayan Ghosh",
     role: "Data Science",
     quote: "The skill matching feature helped me build a balanced team.",
     avatar: "👨‍💼",
   },
   {
-    name: "Priyanka Das",
+    name: "Shriya Banerjee",
     role: "Product Design",
     quote: "Collaborating here is smooth and intuitive. Highly recommend!",
     avatar: "👩‍🎨",
