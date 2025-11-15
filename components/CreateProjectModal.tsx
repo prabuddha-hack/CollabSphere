@@ -49,7 +49,7 @@ export function CreateProjectModal({
       tasks: [],
     });
 
-    // Reset
+
     setName("");
     setDescription("");
     setOpen(false);
